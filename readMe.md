@@ -10,6 +10,7 @@ https://github.com/omnislashh/nasa-web-project.git
 - req SQL POST ds bdd index img like ds table pictures
 - Table d'asso membres-pictures
 - logique bouton j'aime : INSERT ds membres-pictures id membre/img like
+- display img ds profil
 - styling
 - documentation
 
@@ -20,3 +21,5 @@ https://github.com/omnislashh/nasa-web-project.git
 ## features 
 - filtre par date
 - plein ecran
+- "Bienvenue, pseudo" dans Index
+- formulaire de contact

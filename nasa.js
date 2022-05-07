@@ -14,9 +14,11 @@ async function fetchText() {
             console.log(value.img_src);
             // create new li element
             let li = document.createElement('li');
-            li.textContent = 'About Us';
+            li.innerHTML = '<img src="'+ value.img_src +'">' + '<form><input value="'+ value.id +'" /><input type="submit" value="J\'aime"/></form>';
+            
             // add it to the ul element
             pics.appendChild(li);
+            
           });
     }
 }

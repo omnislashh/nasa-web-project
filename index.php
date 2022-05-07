@@ -15,5 +15,9 @@ if(isset($_SESSION['comptecree'])) {
 </head>
 <body>
     <h1>Index</h1>
+    <ul class="pics">
+
+    </ul>
+    <script src="nasa.js"></script>
 </body>
 </html>
