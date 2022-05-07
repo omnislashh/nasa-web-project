@@ -21,9 +21,18 @@ if(isset($_GET['id']) AND $_GET['id'] > 0)
     <title>Document</title>
 </head>
 <body>
-    <h2>Profil de <?php echo $userinfo['pseudo'];?></h2>
+    <h2>Page Profil de <?php echo $userinfo['pseudo'];?></h2>
     <h3>Pseudo = <?php echo $userinfo['pseudo']?></h3>
     <h3>Mail = <?php echo $userinfo['email']?></h3>
+    <?php
+    if(isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']) {
+        echo "mon profil perso";
+    ?>
+        <a href="#">Editer mon profil</a>
+        <a href="deconnexion.php">Se déconnecter</a>
+    <?php
+    }
+    ?>    
     <?php
     if(isset($erreur)) {
         echo $erreur;
