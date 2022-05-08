@@ -14,13 +14,38 @@ async function fetchText() {
             console.log(value.img_src);
             // create new li element
             let li = document.createElement('li');
-            li.innerHTML = '<img src="'+ value.img_src +'">' + '<form><input value="'+ value.id +'" /><input type="submit" value="J\'aime"/></form>';
+            li.innerHTML = '<img src="'+ value.img_src +'">' + '<button class=".myButtons" data-id="'+ value.id +'">J\'aime</button>';
             
             // add it to the ul element
             pics.appendChild(li);
             
           });
+        let myButtons = document.querySelectorAll("button");
+        myButtons.forEach(element => console.log("test"));
+        myButtons.forEach(element => console.log(element.dataset.id));
+        myButtons.forEach(item => {
+
+            item.addEventListener('click', event => {
+
+                console.log(item.dataset.id)
+                let xmlhttp = new XMLHttpRequest();
+
+                xmlhttp.onreadystatechange = function() {
+                    if(this.readyState == 4 && this.status == 200) {
+                        console.log(this.response)
+                    } else if (this.readyState == 4) {
+                        console.log("error")
+                    }
+                }
+                xmlhttp.open("POST", "liked.php", true);
+                
+                xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+                xmlhttp.send(item.dataset.id);
+            })
+          })
     }
 }
 
 fetchText();
+
+

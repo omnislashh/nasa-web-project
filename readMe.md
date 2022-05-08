@@ -15,10 +15,12 @@ https://github.com/omnislashh/nasa-web-project.git
 - documentation
 
 ## amelioration secu 
+- trim inputs
 - req sql ds variables ou procédures stockées
 - gestion droits schema : root
 
 ## features 
+- menu
 - filtre par date
 - plein ecran
 - "Bienvenue, pseudo" dans Index

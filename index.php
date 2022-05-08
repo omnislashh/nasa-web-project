@@ -1,8 +1,12 @@
 <?php
 session_start();
 if(isset($_SESSION['comptecree'])) {
-    echo $_SESSION['comptecree'];
+    // echo $_SESSION['comptecree'];
 }
+
+$bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
+var_dump($bdd);
+echo "connected/";
 
 ?>
 <!DOCTYPE html>
