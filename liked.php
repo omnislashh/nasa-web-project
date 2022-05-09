@@ -9,8 +9,8 @@ if(!empty($_POST)) {
 
     foreach($obj as $key => $value) {
         echo $key;
-        $insertpic = $bdd->prepare("INSERT INTO nasapic(idLikedNasaPic) VALUE(?)");        
-        $insertpic->execute(array($key));
+        $insertpic = $bdd->prepare("INSERT INTO nasapic(idLikedNasaPic, likedBy) VALUE(?, ?)");        
+        $insertpic->execute(array($key, $_SESSION['id']));
         //modifier table nasapic : ajout id membre
         //faire innerjoin pour display
         //downside : redondance

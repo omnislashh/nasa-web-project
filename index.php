@@ -6,6 +6,7 @@ if(isset($_SESSION['comptecree'])) {
 
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
 var_dump($bdd);
+var_dump($_SESSION['id']);
 echo "connected/";
 
 ?>

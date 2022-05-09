@@ -29,7 +29,11 @@ if(isset($_POST['formulaire-inscription'])) {
                                 $insertmbr = $bdd->prepare("INSERT INTO membres(pseudo, email, motdepasse) VALUES(?, ?, ?)");
                                 $insertmbr->execute(array($pseudo, $mail, $password));
                                 $_SESSION['comptecree'] = "inscription réussie";
-                                header('Location: index.php');
+                                $myId = $bdd->prepare("SELECT id FROM membres WHERE pseudo = ?");
+                                $myId->execute(array($pseudo));
+                                $userinfo = $myId->fetch();
+                                $_SESSION['id'] = $userinfo['id'];
+                                header("Location: index.php?id=".$_SESSION['id']);
                             } else {
                                 $erreur = "Les mots de passe ne correspondent pas.";
                             }

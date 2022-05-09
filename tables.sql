@@ -1,7 +1,7 @@
 USE espacemembres;
 
-ALTER TABLE liked DROP CONSTRAINT liked_ibfk_1;
-ALTER TABLE liked DROP CONSTRAINT liked_ibfk_2;
+ALTER TABLE liked DROP CONSTRAINT nasapic_ibfk_1;
+ALTER TABLE liked DROP CONSTRAINT membres_ibfk_2;
 
 DROP TABLE IF EXISTS membres;
 CREATE table membres(
@@ -16,6 +16,7 @@ DROP TABLE IF EXISTS nasapic;
 CREATE table nasapic(
     idNasaPic INT UNSIGNED NOT NULL AUTO_INCREMENT,
     idLikedNasaPic INT UNSIGNED,
+    likedBy INT UNSIGNED,
     PRIMARY KEY(idNasaPic) 
 ) ENGINE=InnoDB;
 
