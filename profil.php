@@ -9,6 +9,11 @@ if(isset($_GET['id']) AND $_GET['id'] > 0)
     $requser = $bdd->prepare('SELECT * FROM membres WHERE id = ?');
     $requser->execute(array($getid));
     $userinfo = $requser->fetch();
+
+    $reqLiked = $bdd->prepare('SELECT * FROM nasapic WHERE ? = likedBy');
+    $reqLiked->execute(array($getid));
+    $userInfoLiked = $reqLiked->fetchAll();
+    var_dump($userInfoLiked);
 }
 ?>
 
@@ -37,6 +42,9 @@ if(isset($_GET['id']) AND $_GET['id'] > 0)
     if(isset($erreur)) {
         echo $erreur;
     }
+    ?>
+    <?php
+    
     ?>
 </body>
 </html>

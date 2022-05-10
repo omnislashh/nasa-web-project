@@ -20,6 +20,14 @@ CREATE table nasapic(
     PRIMARY KEY(idNasaPic) 
 ) ENGINE=InnoDB;
 
+DROP TABLE IF EXISTS nasapic;
+CREATE table nasapic(
+    idNasaPic INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    urlLikedNasaPic TEXT,
+    likedBy INT UNSIGNED,
+    PRIMARY KEY(idNasaPic) 
+) ENGINE=InnoDB;
+
 DROP TABLE IF EXISTS liked;
 CREATE table liked(
     idLikedPic INT UNSIGNED,

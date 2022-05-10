@@ -14,7 +14,7 @@ async function fetchText() {
             console.log(value.img_src);
             // create new li element
             let li = document.createElement('li');
-            li.innerHTML = '<img src="'+ value.img_src +'">' + '<button class=".myButtons" data-id="'+ value.id +'">J\'aime</button>';
+            li.innerHTML = '<img src="'+ value.img_src +'">' + '<button class=".myButtons" data-id="'+ value.id + '" data-url="'+ value.img_src +'">J\'aime</button>';
             
             // add it to the ul element
             pics.appendChild(li);
@@ -28,6 +28,7 @@ async function fetchText() {
             item.addEventListener('click', event => {
 
                 console.log(item.dataset.id)
+                console.log(item.dataset.url)
                 let xmlhttp = new XMLHttpRequest();
 
                 xmlhttp.onreadystatechange = function() {
@@ -40,7 +41,8 @@ async function fetchText() {
                 xmlhttp.open("POST", "liked.php", true);
                 
                 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-                xmlhttp.send(item.dataset.id);
+                xmlhttp.send(toString(item.dataset.url));
+
             })
           })
     }
