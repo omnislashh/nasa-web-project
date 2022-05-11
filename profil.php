@@ -15,6 +15,23 @@ if(isset($_GET['id']) AND $_GET['id'] > 0)
     $userInfoLiked = $reqLiked->fetchAll();
     var_dump($userInfoLiked);
 }
+var_dump($_POST);
+if(!empty($_POST)) {
+    $dataId = json_encode($_POST);
+    $obj = json_decode($dataId);
+    echo $obj;
+    echo $_POST;
+    echo $dataId;
+    echo "test";
+    foreach($obj as $key => $value) {
+        echo $key;
+        // echo $userInfoLiked;
+        echo $value;
+        //modifier table nasapic : ajout id membre
+        //faire innerjoin pour display
+        //downside : redondance
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -46,5 +63,6 @@ if(isset($_GET['id']) AND $_GET['id'] > 0)
     <?php
     
     ?>
+    
 </body>
 </html>

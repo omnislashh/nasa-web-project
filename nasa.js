@@ -41,7 +41,7 @@ async function fetchText() {
                 xmlhttp.open("POST", "liked.php", true);
                 
                 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-                xmlhttp.send(toString(item.dataset.url));
+                xmlhttp.send(item.dataset.id);
 
             })
           })
