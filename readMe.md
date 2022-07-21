@@ -25,3 +25,7 @@ https://github.com/omnislashh/nasa-web-project.git
 - plein ecran
 - "Bienvenue, pseudo" dans Index
 - formulaire de contact
+
+## notes
+- use INNER JOIN pour mempic
+- try write in editionprofil

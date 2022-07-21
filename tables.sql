@@ -16,7 +16,6 @@ DROP TABLE IF EXISTS nasapic;
 CREATE table nasapic(
     idNasaPic INT UNSIGNED NOT NULL AUTO_INCREMENT,
     idLikedNasaPic INT UNSIGNED,
-    likedBy INT UNSIGNED,
     PRIMARY KEY(idNasaPic) 
 ) ENGINE=InnoDB;
 
