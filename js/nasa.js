@@ -29,6 +29,7 @@ async function fetchText() {
 
                 console.log(item.dataset.id)
                 console.log(item.dataset.url)
+                console.log("clicked");
                 let xmlhttp = new XMLHttpRequest();
 
                 xmlhttp.onreadystatechange = function() {

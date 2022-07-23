@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'menu.php';
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
 var_dump($bdd);
 echo "connected/";
@@ -64,6 +65,7 @@ if(isset($_POST['formulaire-inscription'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/style.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -122,5 +124,6 @@ if(isset($_POST['formulaire-inscription'])) {
         echo $erreur;
     }
     ?>
+    <div>I'm a footer</div>
 </body>
 </html>

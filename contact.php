@@ -37,6 +37,7 @@ if(isset($_POST['formconnect'])) {
     <title>Document</title>
 </head>
 <body>
+    <p>This is a fanmade site, you can contact me: Elie Ly-Kok 06 65 67 30 62 or by email elie.ly.kok@gmail.com</p>
     <h1>Connexion</h1>
     <form method="POST" action="">
         <input type="mail" name="mailconnect" placeholder="Mail" />

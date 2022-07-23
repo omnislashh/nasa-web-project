@@ -17,18 +17,20 @@ CREATE table membres(
 DROP TABLE IF EXISTS nasapic;
 CREATE table nasapic(
     idNasaPic INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    nasaPicNumber INT UNSIGNED,
+    -- NasaPic INT UNSIGNED,
     PRIMARY KEY(idNasaPic) 
 ) ENGINE=InnoDB;
 
-DROP TABLE IF EXISTS memPic;
--- Creation de la table d'association 
-CREATE TABLE memPic(
-   membres.id INT UNSIGNED NOT NULL,
-   nasapic.idNasaPic INT UNSIGNED NOT NULL,
-   PRIMARY KEY(membres.id, idNasaPic),
-   FOREIGN KEY(membres.id) REFERENCES mem(membres.id),
-   FOREIGN KEY(nasapic.idNasaPic) REFERENCES nasapic(nasapic.idNasaPic)
-) ENGINE=InnoDB;
+-- DROP TABLE IF EXISTS memPic;
+-- -- Creation de la table d'association 
+-- CREATE TABLE memPic(
+--    membres.id INT UNSIGNED NOT NULL,
+--    nasapic.NasaPic INT UNSIGNED,
+--    PRIMARY KEY(membres.id, nasapic.idNasaPic),
+-- --    FOREIGN KEY(membres.id) REFERENCES mem(membres.id),
+-- --    FOREIGN KEY(nasapic.NasaPic) REFERENCES nasapic(nasapic.NasaPic)
+-- ) ENGINE=InnoDB;
 
 TRUNCATE TABLE membres; -- pour RESET
 INSERT INTO membres (`id`, `pseudo`, `email`, `motdepasse`)	
@@ -42,7 +44,7 @@ INSERT INTO nasapic (`idNasaPic`)
         (2),
 		(3);
 TRUNCATE TABLE memPic;
-INSERT INTO memPic (`id`, `idNasaPic`)
+INSERT INTO memPic (`id`, `NasaPic`)
 	VALUES
 		(1, 1),
         (2, 2);
