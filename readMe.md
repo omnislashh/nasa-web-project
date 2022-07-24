@@ -5,7 +5,7 @@ https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key
 https://github.com/omnislashh/nasa-web-project.git
 
 ## todo
-- affichage img
+- affichage img full screen
 - btn j'aime
 - req SQL POST ds bdd index img like ds table pictures
 - Table d'asso membres-pictures

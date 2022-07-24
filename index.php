@@ -27,6 +27,7 @@ echo "connected to database";
     </ul>
     <div>I'm the footer</div>
     <script src="./js/nasa.js"></script>
+    <script src="./js/fullScreen.js"></script>
 </body>
 </html>
 <?php
