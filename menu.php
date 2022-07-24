@@ -1,3 +1,6 @@
+<?
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,16 +9,16 @@
 </head>
 <body>
     <div class="top-site">
-    <a class="active" href="#home"><img class="logo" src="./public/NASA_logo.svg.png" alt="nasa logo"></a>
+    <a class="active" href="index.php"><img class="logo" src="./public/NASA_logo.svg.png" alt="nasa logo"></a>
         <div class="topnav">
-            <a class="active" href="#home">Home</a>
+            <a class="active" href="index.php">Home</a>
             <a href="inscription.php">inscription</a>
             <a href="connexion.php">connexion</a>
             <a href="editionprofil.php">edition de profil</a>
             <a href="profil.php">profil</a>
             <a href="deconnexion.php">deconnexion</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a href="contact.php">Contact</a>
+            <a href="about.php">About</a>
         </div>
     </div>
 <div style="padding-left:16px">

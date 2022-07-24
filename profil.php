@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include 'menu.php';
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
 
 if(isset($_GET['id']) AND $_GET['id'] > 0)
@@ -10,10 +10,10 @@ if(isset($_GET['id']) AND $_GET['id'] > 0)
     $requser->execute(array($getid));
     $userinfo = $requser->fetch();
 
-    $reqLiked = $bdd->prepare('SELECT * FROM nasapic WHERE ? = likedBy');
-    $reqLiked->execute(array($getid));
-    $userInfoLiked = $reqLiked->fetchAll();
-    var_dump($userInfoLiked);
+    // $reqLiked = $bdd->prepare('SELECT * FROM nasapic WHERE ? = likedBy');
+    // $reqLiked->execute(array($getid));
+    // $userInfoLiked = $reqLiked->fetchAll();
+    // var_dump($userInfoLiked);
 }
 var_dump($_POST);
 if(!empty($_POST)) {
@@ -44,6 +44,7 @@ if(!empty($_POST)) {
     <title>Document</title>
 </head>
 <body>
+    <p>to see your profile use http://localhost/nasa-web-project/profil.php?id=</p>
     <h2>Page Profil de <?php echo $userinfo['pseudo'];?></h2>
     <h3>Pseudo = <?php echo $userinfo['pseudo']?></h3>
     <h3>Mail = <?php echo $userinfo['email']?></h3>

@@ -34,6 +34,7 @@ if(isset($_POST['formulaire-inscription'])) {
                                 $myId->execute(array($pseudo));
                                 $userinfo = $myId->fetch();
                                 $_SESSION['id'] = $userinfo['id'];
+                                
                                 header("Location: index.php?id=".$_SESSION['id']);
                             } else {
                                 $erreur = "Les mots de passe ne correspondent pas.";
@@ -114,11 +115,12 @@ if(isset($_POST['formulaire-inscription'])) {
             </tr>
             <tr>
                 <td>
-                    <input type="submit" name="formulaire-inscription" value="Je m'inscris">
+                    <input class="btn-color" type="submit" name="formulaire-inscription" value="JE M'INSCRIS">
                 </td>
             </tr>
         </table>
     </form>
+    
     <?php
     if(isset($erreur)) {
         echo $erreur;

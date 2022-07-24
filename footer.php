@@ -1,3 +1,6 @@
+<?
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,9 +8,8 @@
 
 </head>
 <body>
-    <div class="top-site">
-    
-</div>
-
+    <div>
+        <p>footer-test</p>
+    </div>
 </body>
 </html>

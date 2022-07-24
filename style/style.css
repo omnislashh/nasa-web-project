@@ -49,6 +49,23 @@ button {
     justify-content: center;
 }
 
+.btn-color {
+  color: white;
+  border-radius: 0%;
+  background-color: #0b3d91;
+  border: none;
+  height: 40px;
+  width: 175px;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-right: -30px;
+}
+
+.btn-color:hover {
+  cursor: pointer;
+  background-color: #5d7fb9;
+}
+
 .topnav {
     overflow: hidden;
     background-color: #333;

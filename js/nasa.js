@@ -14,7 +14,7 @@ async function fetchText() {
             console.log(value.img_src);
             // create new li element
             let li = document.createElement('li');
-            li.innerHTML = '<img src="'+ value.img_src +'">' + '<button class=".myButtons" data-id="'+ value.id + '" data-url="'+ value.img_src +'">J\'aime</button>';
+            li.innerHTML = '<img src="'+ value.img_src +'">' + '<button class=".myButtons btn-color" data-id="'+ value.id + '" data-url="'+ value.img_src +'">J\'AIME</button>';
             
             // add it to the ul element
             pics.appendChild(li);

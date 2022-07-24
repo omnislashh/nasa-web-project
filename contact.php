@@ -42,7 +42,7 @@ if(isset($_POST['formconnect'])) {
     <form method="POST" action="">
         <input type="mail" name="mailconnect" placeholder="Mail" />
         <input type="password" name="passwordconnect" placeholder="Mot de passe" />
-        <input type="submit" name="formconnect" value="Se connecter" />
+        <input class="btn-color"  type="submit" name="formconnect" value="Se connecter" />
     </form>
     <?php
     if(isset($erreur)) {

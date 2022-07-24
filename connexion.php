@@ -1,30 +1,42 @@
 <?php
 session_start();
-echo "session";
 include 'menu.php';
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
-echo "PDO";
-if(isset($_POST['formconnect'])) {
-    $mailconnect = htmlspecialchars($_POST['mailconnect']);
-    $passwordconnect = sha1($_POST['passwordconnect']);
-    if(!empty($mailconnect) AND !empty($passwordconnect)) {
-        $requser = $bdd->prepare("SELECT * FROM membres WHERE email = ? AND motdepasse = ?");
-        $requser->execute(array($mailconnect, $passwordconnect));
-        $userexist = $requser->rowCount();
-        if($userexist == 1)
-        {
-            $userinfo = $requser->fetch();
-            $_SESSION['id'] = $userinfo['id'];
-            $_SESSION['pseudo'] = $userinfo['pseudo'];
-            $_SESSION['mail'] = $userinfo['email'];
-            header("Location: profil.php?id=".$_SESSION['id']);
-        } else {
-            $erreur = "Mauvais mail ou mot de passe";
-        }
-    } else {
-        $erreur = "Tous les champs doivent être connectés";
-    }
-}
+var_dump($bdd);
+echo "connected/";
+
+
+// $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
+// echo "PDO";
+// if(isset($_POST['formconnect'])) {
+    
+//     $mailconnect = htmlspecialchars($_POST['mailconnect']);
+//     $passwordconnect = sha1($_POST['passwordconnect']);
+//     if(!empty($mailconnect) AND !empty($passwordconnect)) {
+//         echo "test";
+//         $requser = $bdd->prepare("SELECT * FROM membres WHERE email = ? AND motdepasse = ?");
+//         $requser->execute(array($mailconnect, $passwordconnect));
+//         $userexist = $requser->rowCount();
+//         header("Location: profil.php?id=".$_SESSION['id']);
+//         echo $_SESSION['id'];
+//         if($userexist == 1)
+//         {
+//             $_SESSION['comptedejacree'] = "connexion réussie";
+//             $userinfo = $requser->fetch();
+//             $_SESSION['id'] = $userinfo['id'];
+//             $_SESSION['pseudo'] = $userinfo['pseudo'];
+//             $_SESSION['mail'] = $userinfo['email'];
+
+//             header("Location: index.php");
+//             // header("Location: profil.php?id=".$_SESSION['id']);
+//         } else {
+//             echo $_SESSION['id'];
+//             $erreur = "Mauvais mail ou mot de passe";
+//         }
+//     } else {
+//         $erreur = "Tous les champs doivent être connectés";
+//     }
+// }
 
 ?>
 <!DOCTYPE html>
@@ -38,11 +50,12 @@ if(isset($_POST['formconnect'])) {
 </head>
 <body>
     <h1>Connexion</h1>
-    <form method="POST" action="">
+    <p>To connect use your id in url with http://localhost/nasa-web-project/profil.php?id=</p>
+    <!-- <form method="POST" action="">
         <input type="mail" name="mailconnect" placeholder="Mail" />
         <input type="password" name="passwordconnect" placeholder="Mot de passe" />
-        <input type="submit" name="formconnect" value="Se connecter" />
-    </form>
+        <input class="btn-color" type="submit" name="formconnect" value="Se connecter" />
+    </form> -->
     <?php
     if(isset($erreur)) {
         echo $erreur;

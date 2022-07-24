@@ -29,3 +29,12 @@ https://github.com/omnislashh/nasa-web-project.git
 ## notes
 - use INNER JOIN pour mempic
 - try write in editionprofil
+
+## to do more
+footer presentation
+delete logs unused
+
+INSERT INTO nasapic (nasaPicNumber)
+VALUE(12);
+
+gérer le inner join to see the liked images by profile

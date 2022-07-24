@@ -27,7 +27,7 @@ if(isset($_SESSION['id']))
     }
 
     //gestion images liked
-    if($_SESSION['id'] IN likedBy){
+    if($_SESSION['id']){
 
     }
     
@@ -63,9 +63,9 @@ if(isset($_SESSION['id']))
         }
     }
 
-    // if(isset($_POST['newpseudo']) AND $_POST['newpseudo'] == $user['pseudo']) {
-    //     header('Location: profil.php?id='.$_SESSION['id']);
-    // }
+    if(isset($_POST['newpseudo']) AND $_POST['newpseudo'] == $user['pseudo']) {
+        header('Location: profil.php?id='.$_SESSION['id']);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -79,7 +79,7 @@ if(isset($_SESSION['id']))
 </head>
 <body>
     <h2>Edition de mon profil</h2>
-    
+    <p>To edit use your id in url http://localhost/nasa-web-project/editionprofil.php?id=</p>
     <form method="POST" action="">
         <table>
             <tr>
@@ -116,7 +116,7 @@ if(isset($_SESSION['id']))
             </tr>
             <tr>
                 <td>
-                    <input type="submit" value="Mettre à jour mon profil"/>
+                    <input class="btn-color" type="submit" value="Mettre à jour mon profil"/>
                 </td>
             </tr>
         </table>    
