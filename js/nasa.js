@@ -14,10 +14,11 @@ async function fetchText() {
             console.log(value.img_src);
             // create new li element
             let li = document.createElement('li');
-            li.innerHTML = '<img id="fullScreenElement2" class="button" onclick="toggleFullScreen("fullScreenElement1")" src="'+ value.img_src +'">' + '<button class=".myButtons btn-color" data-id="'+ value.id + '" data-url="'+ value.img_src +'">J\'AIME</button>';
+            li.innerHTML = '<img class=".big" src="'+ value.img_src +'">' + '<button class=".myButtons btn-color" data-id="'+ value.id + '" data-url="'+ value.img_src +'">Details</button>';
             
             // add it to the ul element
             pics.appendChild(li);
+
             
           });
         let myButtons = document.querySelectorAll("button");

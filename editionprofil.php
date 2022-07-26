@@ -2,7 +2,7 @@
 session_start();
 include 'menu.php';
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
-
+echo "log: connected to database";
 if(isset($_SESSION['id']))
 {
     $requser = $bdd->prepare("SELECT * FROM membres WHERE id=?");

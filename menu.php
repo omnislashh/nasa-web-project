@@ -20,10 +20,36 @@ session_start();
             <a href="contact.php">Contact</a>
             <a href="about.php">About</a>
         </div>
+        <div class="topnavMobile">
+            <div class="mob-nav">
+                <a class="active" href="index.php">Home</a>
+            </div>
+            <div>
+                <a href="inscription.php">inscription</a>
+            </div>
+            <div>
+                <a href="connexion.php">connexion</a>
+            </div>
+            <div>
+                <a href="editionprofil.php">edition de profil</a>
+            </div>
+            <div>
+                <a href="profil.php">profil</a>
+            </div>
+            <div>
+                <a href="deconnexion.php">deconnexion</a>
+            </div>
+            <div>
+                <a href="contact.php">Contact</a>
+            </div>
+            <div>
+                <a href="about.php">About</a>
+            </div>
+        </div>
     </div>
 <div style="padding-left:16px">
   <h2>This site is about some Nasa Pictures</h2>
-  <p>Create an account, choose your favorites, and check the results in the console</p>
+  <p>Create an account, and check the results in the console</p>
 </div>
 
 </body>

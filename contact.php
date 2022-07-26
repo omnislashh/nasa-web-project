@@ -1,9 +1,10 @@
 <?php
 session_start();
-echo "session";
+
 include 'menu.php';
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
-echo "PDO";
+echo "log: connected to database";
+// echo "PDO";
 if(isset($_POST['formconnect'])) {
     $mailconnect = htmlspecialchars($_POST['mailconnect']);
     $passwordconnect = sha1($_POST['passwordconnect']);
@@ -37,13 +38,17 @@ if(isset($_POST['formconnect'])) {
     <title>Document</title>
 </head>
 <body>
-    <p>This is a fanmade site, you can contact me: Elie Ly-Kok 06 65 67 30 62 or by email elie.ly.kok@gmail.com</p>
-    <h1>Connexion</h1>
-    <form method="POST" action="">
+    <h1>Contact</h1>
+    <p class="p-style">This is a site made for educational purposes, you can contact me by email: 
+    <a class="f-link" href="mailto:elie.ly.kok@gmail.com">Elie Ly-Kok</a>  
+    
+    <p class="p-style">or by phone: 06 65 67 30 62</p>
+    
+    <!-- <form method="POST" action="">
         <input type="mail" name="mailconnect" placeholder="Mail" />
         <input type="password" name="passwordconnect" placeholder="Mot de passe" />
         <input class="btn-color"  type="submit" name="formconnect" value="Se connecter" />
-    </form>
+    </form> -->
     <?php
     if(isset($erreur)) {
         echo $erreur;

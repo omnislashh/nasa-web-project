@@ -2,8 +2,8 @@
 session_start();
 include 'menu.php';
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
-var_dump($bdd);
-echo "connected/";
+// var_dump($bdd);
+// echo "connected/";
 if(isset($_POST['formulaire-inscription'])) {
     $pseudo = htmlspecialchars($_POST['pseudo']);
     $mail = htmlspecialchars($_POST['mail']);
@@ -72,7 +72,7 @@ if(isset($_POST['formulaire-inscription'])) {
 <body>
     <h1>Inscription</h1>
     <form method="POST" action="">
-        <table>
+        <table class ="form-marg">
             <tr>
                 <td>
                     <label for="pseudo">Votre pseudo :</label>

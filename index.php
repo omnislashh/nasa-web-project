@@ -3,11 +3,13 @@ session_start();
 if(isset($_SESSION['comptecree'])) {
     // echo $_SESSION['comptecree'];
 }
-include 'menu.php';
+
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
-var_dump($bdd);
-var_dump($_SESSION['id']);
-echo "connected to database";
+// var_dump($bdd);
+echo "log: connected to database";
+include 'menu.php';
+var_dump("if you subscribe your user id is: " .$_SESSION['id']);
+// echo "log: connected to database";
 
 ?>
 <!DOCTYPE html>
@@ -21,13 +23,12 @@ echo "connected to database";
 </head>
 <body>
     <h1>Welcome</h1>
-    
     <ul class="pics">
 
     </ul>
     <div>I'm the footer</div>
     <script src="./js/nasa.js"></script>
-    <script src="./js/fullScreen.js"></script>
+    
 </body>
 </html>
 <?php

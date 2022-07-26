@@ -4,15 +4,16 @@ https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key
 ## repo
 https://github.com/omnislashh/nasa-web-project.git
 
-## todo
-- affichage img full screen
-- btn j'aime
-- req SQL POST ds bdd index img like ds table pictures
+## additional todo features
+- affichage img full screen onclick
+- btn like/dislike
 - Table d'asso membres-pictures
 - logique bouton j'aime : INSERT ds membres-pictures id membre/img like
 - display img ds profil
 - styling
 - documentation
+- tables : table nasa pictures liked
+- table d'association N-N membre-images
 
 ## amelioration secu 
 - trim inputs
@@ -28,7 +29,7 @@ https://github.com/omnislashh/nasa-web-project.git
 
 ## notes
 - use INNER JOIN pour mempic
-- try write in editionprofil
+- try to write in editionprofil
 
 ## to do more
 footer presentation
@@ -36,5 +37,5 @@ delete logs unused
 
 INSERT INTO nasapic (nasaPicNumber)
 VALUE(12);
-
-gérer le inner join to see the liked images by profile
+inner join to see the liked images by profile
+add details, separate profile from home index

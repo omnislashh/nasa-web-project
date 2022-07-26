@@ -1,9 +1,12 @@
 <?php
 session_start();
-include 'menu.php';
+
+
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
-var_dump($bdd);
-echo "connected/";
+echo "log: connected to database";
+include 'menu.php';
+// var_dump($bdd);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,8 +18,20 @@ echo "connected/";
     <title>Document</title>
 </head>
 <body>
-    <p>To connect use your id in url</p>
-    <p>To edit use your id in url http://localhost/nasa-web-project/editionprofil.php?id= and you will be directly redirected to the connexion page</p>
+    <p class="list-style">The intent of this site is about:</p>
+    <ul class="list-style">
+        <li>- connecting to a database</li>
+        <li>- fetching some datas from a given endpoint</li>
+        <li>- giving a user the possibiity of creating a profile via a form</li>
+        <li>- using a learning subject to push my learning skills</li>
+    </ul>
+    <p class="p-style">To create your profile use </p>
+    <p class="code">http://localhost/nasa-web-project/inscription.php </p>
+    <p class="p-style">and a user id will be given to you, please note it carefully</p>
+    <p class="code">To connect use your id in url with http://localhost/nasa-web-project/profil.php?id=</p>
+    <p class="p-style">To edit your profile use your id in url</p> 
+    <p class="code">http://localhost/nasa-web-project/editionprofil.php?id=</p> 
+    <p class="p-style">and you will be directly redirected to the connexion page</p>
 
 </body>
 </html>

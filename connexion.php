@@ -2,8 +2,9 @@
 session_start();
 include 'menu.php';
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
-var_dump($bdd);
-echo "connected/";
+// var_dump($bdd);
+echo "log: connected to database";
+// echo "connected/";
 
 
 // $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
@@ -50,7 +51,8 @@ echo "connected/";
 </head>
 <body>
     <h1>Connexion</h1>
-    <p>To connect use your id in url with http://localhost/nasa-web-project/profil.php?id=</p>
+    <p class="p-style">To connect use your id in url with </p>
+    <p class="code">http://localhost/nasa-web-project/profil.php?id=</p>
     <!-- <form method="POST" action="">
         <input type="mail" name="mailconnect" placeholder="Mail" />
         <input type="password" name="passwordconnect" placeholder="Mot de passe" />
