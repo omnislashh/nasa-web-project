@@ -17,3 +17,4 @@ header("Location: connexion.php");
     
 </body>
 </html>
+<?php include 'footer.php';?>

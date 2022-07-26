@@ -126,6 +126,6 @@ if(isset($_POST['formulaire-inscription'])) {
         echo $erreur;
     }
     ?>
-    <div>I'm a footer</div>
+    <?php include 'footer.php';?>
 </body>
 </html>

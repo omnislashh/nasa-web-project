@@ -12,11 +12,11 @@ session_start();
     <a class="active" href="index.php"><img class="logo" src="./public/NASA_logo.svg.png" alt="nasa logo"></a>
         <div class="topnav">
             <a class="active" href="index.php">Home</a>
-            <a href="inscription.php">inscription</a>
-            <a href="connexion.php">connexion</a>
-            <a href="editionprofil.php">edition de profil</a>
-            <a href="profil.php">profil</a>
-            <a href="deconnexion.php">deconnexion</a>
+            <a href="inscription.php">Inscription</a>
+            <a href="connexion.php">Connexion</a>
+            <a href="editionprofil.php">Edition de profil</a>
+            <a href="profil.php">Profil</a>
+            <a href="deconnexion.php">Deconnexion</a>
             <a href="contact.php">Contact</a>
             <a href="about.php">About</a>
         </div>
@@ -24,25 +24,25 @@ session_start();
             <div class="mob-nav">
                 <a class="active" href="index.php">Home</a>
             </div>
-            <div>
-                <a href="inscription.php">inscription</a>
+            <div class="mob-nav">
+                <a href="inscription.php">Inscription</a>
             </div>
-            <div>
-                <a href="connexion.php">connexion</a>
+            <div class="mob-nav">
+                <a href="connexion.php">Connexion</a>
             </div>
-            <div>
-                <a href="editionprofil.php">edition de profil</a>
+            <div class="mob-nav">
+                <a href="editionprofil.php">Edition de profil</a>
             </div>
-            <div>
-                <a href="profil.php">profil</a>
+            <div class="mob-nav">
+                <a href="profil.php">Profil</a>
             </div>
-            <div>
-                <a href="deconnexion.php">deconnexion</a>
+            <div class="mob-nav">
+                <a href="deconnexion.php">Deconnexion</a>
             </div>
-            <div>
+            <div class="mob-nav">
                 <a href="contact.php">Contact</a>
             </div>
-            <div>
+            <div class="mob-nav">
                 <a href="about.php">About</a>
             </div>
         </div>

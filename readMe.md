@@ -4,6 +4,9 @@ https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key
 ## repo
 https://github.com/omnislashh/nasa-web-project.git
 
+## responsive exemples
+See Screencaptures in public folder
+
 ## additional todo features
 - affichage img full screen onclick
 - btn like/dislike
@@ -39,3 +42,4 @@ INSERT INTO nasapic (nasaPicNumber)
 VALUE(12);
 inner join to see the liked images by profile
 add details, separate profile from home index
+

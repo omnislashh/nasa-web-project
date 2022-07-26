@@ -26,10 +26,9 @@ var_dump("if you subscribe your user id is: " .$_SESSION['id']);
     <ul class="pics">
 
     </ul>
-    <div>I'm the footer</div>
+    
     <script src="./js/nasa.js"></script>
     
 </body>
 </html>
-<?php
-    include 'footer.php';?>
+<?php include 'footer.php';?>

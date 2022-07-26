@@ -129,3 +129,4 @@ if(isset($_SESSION['id']))
     header('Location: connexion.php');
 }
 ?>
+<?php include 'footer.php';?>

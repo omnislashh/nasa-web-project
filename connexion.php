@@ -1,11 +1,11 @@
 <?php
 session_start();
-include 'menu.php';
+
 $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
 // var_dump($bdd);
 echo "log: connected to database";
 // echo "connected/";
-
+include 'menu.php';
 
 // $bdd = new PDO('mysql:host=127.0.0.1;dbname=espacemembres', 'root', '');
 // echo "PDO";
@@ -65,3 +65,4 @@ echo "log: connected to database";
     ?>
 </body>
 </html>
+<?php include 'footer.php';?>

@@ -56,3 +56,4 @@ if(isset($_POST['formconnect'])) {
     ?>
 </body>
 </html>
+<?php include 'footer.php';?>

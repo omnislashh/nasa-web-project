@@ -15,7 +15,7 @@ if(isset($_GET['id']) AND $_GET['id'] > 0)
     // $userInfoLiked = $reqLiked->fetchAll();
     // var_dump($userInfoLiked);
 }
-var_dump($_POST);
+// var_dump($_POST);
 if(!empty($_POST)) {
     $dataId = json_encode($_POST);
     $obj = json_decode($dataId);
@@ -44,7 +44,8 @@ if(!empty($_POST)) {
     <title>Document</title>
 </head>
 <body>
-    <p>to see your profile use http://localhost/nasa-web-project/profil.php?id=</p>
+    <p class="p-style">to see your profile use</p> 
+    <p class="code">http://localhost/nasa-web-project/profil.php?id=</p>
     <h2>Page Profil de <?php echo $userinfo['pseudo'];?></h2>
     <h3>Pseudo = <?php echo $userinfo['pseudo']?></h3>
     <h3>Mail = <?php echo $userinfo['email']?></h3>
@@ -62,9 +63,9 @@ if(!empty($_POST)) {
         echo $erreur;
     }
     ?>
-    <?php
     
-    ?>
+    <?php include 'footer.php';?>
+    
     
 </body>
 </html>

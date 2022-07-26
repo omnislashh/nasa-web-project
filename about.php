@@ -27,7 +27,7 @@ include 'menu.php';
     </ul>
     <p class="p-style">To create your profile use </p>
     <p class="code">http://localhost/nasa-web-project/inscription.php </p>
-    <p class="p-style">and a user id will be given to you, please note it carefully</p>
+    <p class="p-style">and a user id will be given to you, please note it carefully whereas your index would remain undefined by php</p>
     <p class="code">To connect use your id in url with http://localhost/nasa-web-project/profil.php?id=</p>
     <p class="p-style">To edit your profile use your id in url</p> 
     <p class="code">http://localhost/nasa-web-project/editionprofil.php?id=</p> 

@@ -15,7 +15,9 @@
 .f-link {
   color:#5d7fb9; 
 }
-
+f-link-bold{
+  font-weight: bold;
+}
 .p-style {
   margin: 1em;
 }
@@ -64,6 +66,12 @@ button {
     flex-wrap: wrap;
     justify-content: center;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}  
 
 .list-style{
   margin: 3em;
@@ -73,6 +81,12 @@ button {
 }
 
 h1 {
+  margin: 1em;
+}
+h2 {
+  margin: 1em;
+}
+h3 {
   margin: 1em;
 }
 .form-marg{
@@ -123,10 +137,24 @@ h1 {
   .topNavMobile {
     display: flex;
     flex-direction: column;
-    
+    margin: 2em;
   }
   .mob-nav a{
-    color:rgb(87, 87, 87);
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 2em;
+    width: 150px;
+  }
+  .mob-nav:hover {
+    background-color: #5d7fb9;
+  }
+  .topnavMobile {
+    background-color: #15418c;
+    margin: 2em;
+  }
+
+  .topnavMobile:hover {
+    
   }
   @media (max-width: 1015px) {
     .topnav {

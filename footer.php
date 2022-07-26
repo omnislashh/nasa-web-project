@@ -8,8 +8,13 @@ session_start();
 
 </head>
 <body>
-    <div>
-        <p>footer-test</p>
+    <div class="container">
+        <div class="little">
+            <a class="active" href="index.php"><img class="logo" src="./public/NASA_logo.svg.png" alt="nasa logo"></a>
+        </div>
+        <div>
+            <a class="f-link-bold" href="mailto:elie.ly.kok@gmail.com">Elie Ly-Kok - 2022</a>
+        </div>
     </div>
 </body>
 </html>
