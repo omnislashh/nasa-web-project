@@ -11,7 +11,7 @@ session_start();
     <div class="top-site">
     <a class="active" href="index.php"><img class="logo" src="./public/NASA_logo.svg.png" alt="nasa logo"></a>
     <div>
-            <button class="menu-togglebutton btn-color">(mobile)</button>
+            <button class="menu-togglebutton btn-color">(menu mobile)</button>
         </div>
         <div class="topnav">
             <a class="active" href="index.php">Home</a>
