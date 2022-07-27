@@ -55,6 +55,28 @@ session_start();
         
     
     </div>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
 <div style="padding-left:16px">
   <h2>This site is about some Nasa Pictures</h2>
   <p>Create an account, and check the results in the console</p>

@@ -5,6 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
+    height: 100%;
 }
 .top-site{
   display: flex;
@@ -198,5 +199,6 @@ h3 {
     } */
     .top-site{
       position: fixed;
+      background-color: #ffffff00;
     }
   }

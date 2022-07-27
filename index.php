@@ -22,6 +22,7 @@ var_dump("if you subscribe your user id is: " .$_SESSION['id']);
     <title>Document</title>
 </head>
 <body>
+    
     <h1>Welcome</h1>
     <ul class="pics">
 

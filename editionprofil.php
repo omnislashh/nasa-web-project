@@ -122,6 +122,7 @@ if(isset($_SESSION['id']))
         </table>    
     </form>
     <?php if(isset($msg)) { echo $msg; } ?>
+    <script src="./js/script.js"></script>
 </body>
 </html>
 <?php

@@ -45,3 +45,16 @@ VALUE(12);
 inner join to see the liked images by profile
 add details, separate profile from home index
 
+## notes draft
+- transparence du menu 
+- UI mobile menu
+- ajout like/dislike
+- se renseigner pour modification de la bdd en N-N (liaison membres- images)
+- réduire le logo du footer
+- mieux aligner les menus
+- ajouter dans le footer le lien vers le site officiel de la NASA
+- renommer les documents
+- gestion erreur php
+- afficher l'image sur le clic
+- faire des screenshot
+

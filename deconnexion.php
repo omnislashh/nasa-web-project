@@ -14,7 +14,7 @@ header("Location: connexion.php");
     <title>Document</title>
 </head>
 <body>
-    
+    <script src="./js/script.js"></script>
 </body>
 </html>
 <?php include 'footer.php';?>
