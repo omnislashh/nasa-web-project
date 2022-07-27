@@ -28,7 +28,7 @@ var_dump("if you subscribe your user id is: " .$_SESSION['id']);
     </ul>
     
     <script src="./js/nasa.js"></script>
-    
+    <script src="./js/script.js"></script>
 </body>
 </html>
 <?php include 'footer.php';?>

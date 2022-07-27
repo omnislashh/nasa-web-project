@@ -1,3 +1,5 @@
+This project is made to manipulate some php and work with an API - hope you like
+
 ## endpoints:  
 https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY  
 
@@ -23,7 +25,7 @@ See Screencaptures in public folder
 - req sql ds variables ou procédures stockées
 - gestion droits schema : root
 
-## features 
+## add features 
 - menu
 - filtre par date
 - plein ecran
@@ -35,8 +37,8 @@ See Screencaptures in public folder
 - try to write in editionprofil
 
 ## to do more
-footer presentation
-delete logs unused
+footer, presentation,
+delete unused logs
 
 INSERT INTO nasapic (nasaPicNumber)
 VALUE(12);

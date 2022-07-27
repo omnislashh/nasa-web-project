@@ -10,6 +10,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #333;
 }
 
 .f-link {
@@ -108,6 +113,23 @@ h3 {
   cursor: pointer;
   background-color: #5d7fb9;
 }
+.menu-togglebutton {
+  color: white;
+  border-radius: 0%;
+  background-color: #0b3d91;
+  border: none;
+  height: 40px;
+  width: 175px;
+  font-weight: bolder;
+  /* margin-top: 120px; */
+  margin-right: -150px;
+  opacity: .5;
+}
+
+.menu-togglebutton:hover {
+  cursor: pointer;
+  background-color: #5d7fb9;
+}
 
 .topnav {
     overflow: hidden;
@@ -153,16 +175,28 @@ h3 {
     margin: 2em;
   }
 
-  .topnavMobile:hover {
-    
+  .menu-button {
+    display: none;
   }
   @media (max-width: 1015px) {
     .topnav {
+      display: none;
+    }
+    .menu-button {
+      display: block;
+    }
+    .topnavMobile {
       display: none;
     }
   }
   @media (min-width: 1015px) {
     .topnavMobile {
       display: none;
+    }
+    /* .menu-togglebutton {
+      display: none;
+    } */
+    .top-site{
+      position: fixed;
     }
   }
