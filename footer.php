@@ -10,11 +10,16 @@ session_start();
 <body>
     <div class="container">
         <div class="little">
-            <a class="active" href="index.php"><img class="logo" src="./public/NASA_logo.svg.png" alt="nasa logo"></a>
+            <a class="active" href="https://api.nasa.gov/"><img class="logo" src="./public/NASA_logo-little.svg.png" alt="nasa logo"></a>
         </div>
         <div>
             <a class="f-link-bold" href="mailto:elie.ly.kok@gmail.com">Elie Ly-Kok - 2022</a>
         </div>
+        
     </div>
+    <div class="footer">
+            <a href="https://www.flaticon.com/free-icons/user-interface" title="user interface icons">User interface icons created by Aysel - Flaticon</a>
+        </div>
+    
 </body>
 </html>

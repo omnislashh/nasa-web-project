@@ -9,11 +9,11 @@ session_start();
 </head>
 <body>
     <div class="top-site">
+    
     <a class="active" href="index.php"><img class="logo" src="./public/NASA_logo.svg.png" alt="nasa logo"></a>
-    <div>
-            <button class="menu-togglebutton btn-color">(menu mobile)</button>
-        </div>
+    
         <div class="topnav">
+        
             <a class="active" href="index.php">Home</a>
             <a href="inscription.php">Inscription</a>
             <a href="connexion.php">Connexion</a>
@@ -22,6 +22,10 @@ session_start();
             <a href="deconnexion.php">Deconnexion</a>
             <a href="contact.php">Contact</a>
             <a href="about.php">About</a>
+            
+        </div>
+        <div class="bouton-burger">
+            <button class="menu-togglebutton btn-color">menu-mobile</button>
         </div>
         <div class="topnavMobile">
             <div class="mob-nav">
@@ -67,15 +71,7 @@ session_start();
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        
     </div>
 <div style="padding-left:16px">
   <h2>This site is about some Nasa Pictures</h2>

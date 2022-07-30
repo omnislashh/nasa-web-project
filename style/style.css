@@ -114,17 +114,25 @@ h3 {
   cursor: pointer;
   background-color: #5d7fb9;
 }
+.bouton-burger {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
 .menu-togglebutton {
   color: white;
   border-radius: 0%;
   background-color: #0b3d91;
   border: none;
   height: 40px;
-  width: 175px;
+  width: 375px;
   font-weight: bolder;
   /* margin-top: 120px; */
-  margin-right: -150px;
-  opacity: .5;
+  /* margin-right: -150px; */
+  /* opacity: .5; */
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .menu-togglebutton:hover {
@@ -175,6 +183,9 @@ h3 {
     background-color: #15418c;
     margin: 2em;
   }
+  footer {
+    margin: 6px;
+  }
 
   .menu-button {
     display: none;
@@ -199,6 +210,6 @@ h3 {
     } */
     .top-site{
       position: fixed;
-      background-color: #00000000;
+      /* background-color: #00000000; */
     }
   }

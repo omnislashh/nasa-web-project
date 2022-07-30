@@ -6,6 +6,9 @@ https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key
 ## repo
 https://github.com/omnislashh/nasa-web-project.git
 
+## lancer l'appli avec wamp en local
+http://localhost/nasa-web-project/
+
 ## responsive exemples
 See Screencaptures in public folder
 

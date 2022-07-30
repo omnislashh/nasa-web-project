@@ -40,6 +40,8 @@ include 'menu.php';
     <p class="p-style">To edit your profile use your id in url</p> 
     <p class="code">http://localhost/nasa-web-project/editionprofil.php?id=</p> 
     <p class="p-style">and you will be directly redirected to the connexion page</p>
+
     <script src="./js/script.js"></script>
 </body>
 </html>
+<?php include 'footer.php';?>
