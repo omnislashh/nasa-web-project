@@ -24,6 +24,9 @@
 f-link-bold{
   font-weight: bold;
 }
+f-link-bold:hover{
+  color:#105bd8;
+}
 .p-style {
   margin: 1em;
 }
@@ -101,7 +104,7 @@ h3 {
 .btn-color {
   color: white;
   border-radius: 0%;
-  background-color: #0b3d91;
+  background-color: #5d7fb9;
   border: none;
   height: 40px;
   width: 175px;
@@ -109,10 +112,11 @@ h3 {
   margin-top: 65px;
   margin-right: -150px;
 }
-
-.btn-color:hover {
+a:active {
+  color: blue;
+}
+.btn-color {
   cursor: pointer;
-  background-color: #5d7fb9;
 }
 .bouton-burger {
   display: flex;
@@ -182,9 +186,6 @@ h3 {
   .topnavMobile {
     background-color: #15418c;
     margin: 2em;
-  }
-  footer {
-    margin: 6px;
   }
 
   .menu-button {

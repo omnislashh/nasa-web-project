@@ -17,9 +17,6 @@ session_start();
         </div>
         
     </div>
-    <div class="footer">
-            <a href="https://www.flaticon.com/free-icons/user-interface" title="user interface icons">User interface icons created by Aysel - Flaticon</a>
-        </div>
     
 </body>
 </html>
