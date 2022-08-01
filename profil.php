@@ -53,8 +53,7 @@ if(!empty($_POST)) {
     if(isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']) {
         echo "mon profil perso";
     ?>
-        <a href="editionprofil.php">Editer mon profil</a>
-        <a href="deconnexion.php">Se déconnecter</a>
+        
     <?php
     }
     ?>    
@@ -65,7 +64,5 @@ if(!empty($_POST)) {
     ?>
     
     <?php include 'footer.php';?>
-    <script src="./js/script.js"></script>
-    
 </body>
 </html>

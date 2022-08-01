@@ -40,10 +40,10 @@ async function fetchText() {
                         console.log("error")
                     }
                 }
-                xmlhttp.open("POST", "liked.php", true);
+                // xmlhttp.open("POST", "liked.php", true);
                 
-                xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-                xmlhttp.send(item.dataset.id);
+                // xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+                // xmlhttp.send(item.dataset.id);
 
             })
           })

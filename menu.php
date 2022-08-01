@@ -17,7 +17,6 @@ session_start();
             <a class="active" href="index.php">Home</a>
             <a href="inscription.php">Inscription</a>
             <a href="connexion.php">Connexion</a>
-            <a href="editionprofil.php">Edition de profil</a>
             <a href="profil.php">Profil</a>
             <a href="deconnexion.php">Deconnexion</a>
             <a href="contact.php">Contact</a>
@@ -37,9 +36,7 @@ session_start();
             <div class="mob-nav">
                 <a href="connexion.php">Connexion</a>
             </div>
-            <div class="mob-nav">
-                <a href="editionprofil.php">Edition de profil</a>
-            </div>
+            
             <div class="mob-nav">
                 <a href="profil.php">Profil</a>
             </div>
@@ -77,6 +74,6 @@ session_start();
   <h2>This site is about some Nasa Pictures</h2>
   <p>Create an account, and check the results in the console</p>
 </div>
-
+<script src="./js/script.js"></script>
 </body>
 </html>

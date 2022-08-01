@@ -3,7 +3,7 @@ let x = document.querySelector('.topnavMobile');
 // let y = document.querySelector('.page-content');
 
 function handlermyToggleFunction(e) {
-    console.log("myToggleFunction");
+    // console.log("myToggleFunction");
     
     if (x.style.display === "none") {
         x.style.display = "block";
